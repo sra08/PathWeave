@@ -4,16 +4,6 @@ An elegant, highly interactive, real-time AI pathfinding visualizer built in Pyt
 
 ---
 
-## 💡 Why This Project Stands Out (For Recruiters)
-
-This simulator is not just a visual tool; it incorporates clean software design principles and optimization techniques:
-
-* **Asynchronous Animation using Generators:** Instead of locking up the UI thread during computational paths, algorithms are implemented as Python **Generators (`yield`)**. This yields control back to the Pygame main loop every tick, enabling smooth visual updates without interface freezing.
-* **Optimized Data Structures:** A* uses a min-heap structure via Python's `heapq` module to ensure $O(\log N)$ node retrieval times. Node state tracking utilizes hash sets (`open_set` and `visited`) to achieve $O(1)$ checks, avoiding performance bottlenecks.
-* **Decoupled Architecture (MVC-like):** The visual representation (`visualizer.py`), grid coordinate model (`grid.py`), and pathfinding controllers (`algorithms/`) are strictly separated to maintain modularity, readability, and ease of extending new algorithms.
-
----
-
 ## 🚀 Key Features
 
 * **Multiple Search Algorithms:** Watch and compare:
